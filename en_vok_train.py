@@ -1,7 +1,6 @@
 # Autor: TH
 # Datum: 10.07.2024
 
-
 # Dieses Programm ist ein Vokabeltrainer, der Englisch-Wörter mit ihren Entsprechungen in einer
 # Fremdsprache (hier: Russisch) anzeigt. Der Benutzer kann durch die Vokabeln blättern, sie mischen und die Übersetzung 
 # einer Vokabel anzeigen. Die Vokabeln werden aus einer auf dem PC gespeicherten CSV-Datei geladen.
@@ -39,7 +38,7 @@ class VokabelTrainer:
         self.button_weiter = tk.Button(root, text="Weiter", command=self.naechste_vokabel)
         self.button_weiter.pack(side=tk.RIGHT, padx=10, pady=10)
 
-        self.button_mischen = tk.Button(root, text="Vokabeln mischen", command=self.vokabeln_mischen())
+        self.button_mischen = tk.Button(root, text="Vokabeln mischen", command=self.vokabeln_mischen)
         self.button_mischen.pack(side=tk.LEFT, padx=10, pady=10)
 
         self.button_antwort = tk.Button(root, text="Antwort anzeigen", command=self.antwort_anzeigen)
