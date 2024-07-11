@@ -65,13 +65,13 @@ class VokabelTrainer:
         if self.index < len(self.keys):
             vokabel_englisch = self.keys[self.index]
             vokabel_fremdsprache = self.woerterbuch[vokabel_englisch]
-            self.label_vokabel.config(text=f"{vokabel_englisch} in {self.sprache}: {vokabel_fremdsprache}")
+            self.label_vokabel.config(text=f"{vokabel_englisch} {self.sprache}: {vokabel_fremdsprache}")
 
     def vokabel_anzeigen(self):
         # Zeigt die aktuelle Vokabel ohne Übersetzung an
         if self.index < len(self.keys):
             vokabel_englisch = self.keys[self.index]
-            self.label_vokabel.config(text=f"{vokabel_englisch} in {self.sprache}")
+            self.label_vokabel.config(text=f"{vokabel_englisch} {self.sprache}")
 
     def vokabeln_mischen(self):
         # Mischt die Reihenfolge der Vokabeln
